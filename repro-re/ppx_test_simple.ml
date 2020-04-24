@@ -9,7 +9,7 @@ let my_expression_mapper mapper expr =
                                                                     ])
       } ->
       Ast_helper.Exp.constant ((Pconst_integer ("1234567890", None))
-        [@implicit_arity ])
+        [@explicit_arity ])
   | other -> default_mapper.expr mapper other
 let mapper_test_simple argv =
   { default_mapper with expr = my_expression_mapper }

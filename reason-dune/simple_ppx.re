@@ -14,7 +14,7 @@ let my_expression_mapper = (mapper, expr) =>
   | other => default_mapper.expr(mapper, other)
   };
 
-let mapper_test_simple = argv => {
+let mapper_test_simple = _ => {
   ...default_mapper,
   expr: my_expression_mapper,
 };

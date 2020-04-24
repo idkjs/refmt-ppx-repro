@@ -8,9 +8,8 @@ let my_expression_mapper = (mapper, expr) =>
       pexp_desc:
         [@implicit_arity] Pexp_extension({txt: "simple_tag"}, PStr([])),
     } =>
-    Ast_helper.Exp.constant(
-      [@implicit_arity] Pconst_integer("1234567890", None),
-    )
+    Ast_helper.Exp.constant(Pconst_integer("1234567890", None))
+
   | other => default_mapper.expr(mapper, other)
   };
 
