@@ -1,0 +1,5 @@
+(library
+ (public_name ppx_simple_dune)
+ (libraries compiler-libs)
+ (ocamlopt_flags ( -linkall ))
+ (preprocess (pps ppx_tools_versioned.metaquot_402)))
