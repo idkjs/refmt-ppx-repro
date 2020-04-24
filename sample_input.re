@@ -1,1 +1,1 @@
-let _ = Printf.printf("%d", [%simple_tag]);
+let _ = Printf.printf("%d",[%simple_tag]);
